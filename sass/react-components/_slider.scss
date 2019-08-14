@@ -1,0 +1,79 @@
+.form-type-slider {
+	.slider {
+		width: 100%;
+		height: 30px;
+		padding: 0px;
+                width:calc(100% - 50px);
+                margin:auto;
+                position:relative;
+                &:before{
+                    font-family: "Propella";
+                    content: 'G';
+                    color:$brand-color-3;
+                    left: -27px;
+                    top: 3px;
+                    position:absolute;
+                }
+                &:after{
+                    font-family: "Propella";
+                    content: 'E';
+                    color:$brand-color-2;
+                    right: -27px;
+                    top: 3px;
+                    position:absolute;
+                }
+	}
+
+	.handle {
+		padding: 0 6px;
+		text-align: center;
+		line-height: 26px;
+		font-size: 14px;
+		color: $brand-color;		
+		min-width: 30px;
+		border-radius: 15px;
+		top: 13px;
+		transform: translateY(-50%);
+		cursor: pointer;
+                width:0px!important;
+		&.is-active {
+			background-color: darken(white, 5%);
+		}
+	}
+
+	.bar {
+		position: relative;
+		background-image: linear-gradient(to right, $brand-color-3 , $brand-color-1);
+		height: 26px;
+                border-radius:20px;
+
+		&.bar-1 {
+			background-image: unset;
+                        border:1px solid grey;
+                        border-radius:20px;
+		}
+	}
+
+	.horizontal-slider .bar {
+		top: 20px;
+		height: 10px;
+	}
+
+	.horizontal-slider .handle {
+		top: 13px;
+		width: 50px;
+		height: 48px;
+		line-height: 48px;
+	}
+
+	.vertical-slider .handle {
+		left: 1px;
+		width: 48px;
+		line-height: 50px;
+	}
+
+	.vertical-slider .bar {
+		left: 20px;
+		width: 10px;
+	}
+}

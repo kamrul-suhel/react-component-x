@@ -1,0 +1,39 @@
+@media print {
+  .report-component{
+
+    .table table{
+      width:100%;
+    }
+  }
+
+  .gridwrapper {
+    .gridwrapper-x{
+      display:none !important;
+    }
+
+    .gridwrapper-y{
+      display:none !important;
+    }
+
+    .gridwrapper-inner, .gridwrapper-inner-{
+      .react-draggable{
+        display:none !important;
+      }
+
+      .gridwrapper-inner-section-wrapper{
+        display:none !important;
+      }
+    }
+  }
+  .report-component{
+      padding:0px;
+      margin:0px;
+      height:auto!important;
+  }
+  .nav{
+      display:none!important;
+  }
+  .button, a, button{
+      display:none!important;
+  }
+}

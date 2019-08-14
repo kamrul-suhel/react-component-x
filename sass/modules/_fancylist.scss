@@ -1,0 +1,116 @@
+.fancylist {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  overflow:hidden scroll;
+  max-height:calc(100VH - 214px);
+  .fancylist-item {
+    display: flex;
+    flex-direction: row;
+    font-size: 16px;
+    align-items: center;
+    border-radius: 4px;
+    margin-top: 8px;
+    color: $brand-color-dark;
+    padding: 0 10px;
+    line-height: 30px;
+    &.is-inactive {
+        color: #E7E7E7;
+
+        .fancylist-item-icon {
+          filter: grayscale(1);
+          opacity: 0.1;
+        }
+    }
+
+    &:first-child {
+      margin-top: 0;
+    }
+    .fancylist-item-icon {
+        width:30px;
+        height:30px;
+        margin-right:5px;
+        img{
+            width:100%;
+            height:auto;
+        }
+    }
+    .fancylist-item-title {
+      flex: 1;
+      text-align: left;
+      font-weight: 500;
+    }
+
+    .fancylist-item-icon {
+      max-width: 30px;
+      margin-right: 5px;
+
+      img {
+        width: 100%;
+        height: 100%;
+        vertical-align: text-bottom;
+        object-fit:cover;
+        border-radius:50%;
+      }
+    }
+
+    .fancylist-item-actions {
+      display: flex;
+      align-items: center;
+      flex-direction: row;
+      font-size: 18px;
+      color: #1C1C1C;
+
+      > * {
+        margin-left: 10px;
+        line-height: 18px;
+
+          &:first-child {
+              margin-left: 0;
+          }
+
+          &[class*="icon-"]:before, {
+            vertical-align: top;
+          }
+      }
+
+      .form-group {
+          margin: 0;
+          display: block;
+
+          label {
+              min-width: 0;
+          }
+      }
+      .icon-bin, .icon-pencil{
+          font-size:22px;
+      }
+    }
+  }
+}
+
+.people{
+    .fancylist-item{
+        display:flex;
+        align-items:flex-start;
+        justify-content:center;
+        padding:0px;
+        text-align:left;
+        .fancylist-item-title{
+            width:47%;
+        }
+        .fancylist-item-category{
+            width:28%;
+            font-weight:500;
+        }
+        .fancylist-item-actions{
+            width:25%;
+            font-size:20px;
+            justify-content:flex-end;
+        }
+        &:first-child{
+            font-size:12px;
+            text-transform:uppercase;            
+        }
+    }
+}

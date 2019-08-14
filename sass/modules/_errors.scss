@@ -1,0 +1,11 @@
+.errors {
+  list-style: none;
+  background: #ff6961;
+  color: white;
+  padding: 5px;
+  margin: 0;
+  .errors-error{
+    text-transform: uppercase;
+    font-size: 12px;
+  }
+}

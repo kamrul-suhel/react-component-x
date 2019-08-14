@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div
+  className="form-group form-type-checkbox form-group-wide form-group-validation-required form-group-valid is-disabled custom-class-name"
+/>
+`;

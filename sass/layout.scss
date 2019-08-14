@@ -1,0 +1,76 @@
+@import 'vendor/normalize';
+
+@import 'partials/variables';
+@import 'partials/mixins';
+@import 'partials/fonts';
+@import 'partials/typography';
+
+
+// @import 'vendor/ionicons';
+@import 'vendor/react-datepicker';
+@import 'vendor/react-draft-wysiwyg';
+@import 'vendor/react-select';
+@import 'vendor/react-timepicker';
+
+@import 'react-components/accordion';
+@import 'react-components/dialog';
+@import 'react-components/file-upload';
+@import 'react-components/filter';
+@import 'react-components/form';
+@import 'react-components/loader';
+@import 'react-components/map';
+@import 'react-components/multi-select';
+@import 'react-components/radio-checkbox';
+@import 'react-components/repeater';
+@import 'react-components/richtext';
+@import 'react-components/select';
+@import 'react-components/slider';
+@import 'react-components/tab';
+@import 'react-components/table';
+@import 'react-components/textinput';
+@import 'react-components/timepicker';
+@import 'react-components/tooltip';
+@import 'react-components/report';
+
+@import 'partials/forms';
+@import 'partials/buttons';
+@import 'partials/grid';
+@import 'partials/icons';
+@import 'partials/tooltips';
+@import 'partials/print_media';
+
+@import 'modules/gridwrapper';
+@import 'modules/popup';
+@import 'modules/errors';
+@import 'modules/fancylist';
+@import 'modules/switch';
+@import 'modules/repeater';
+@import 'modules/nav';
+@import 'modules/report';
+@import 'modules/projects';
+
+html.scroll-lock,
+html.scroll-lock body {
+  position: fixed;
+  overflow: hidden;
+}
+
+body {
+  font-family: $family-base;
+  font-size: $font-size-base;
+  font-weight: $font-weight-headings;
+  line-height: $line-height-headings;
+  color: $text-color;
+  letter-spacing: -0.25px;
+  width: 100%;
+}
+
+#app {
+    margin-top: 40px;
+    width: 100%;
+    height: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}

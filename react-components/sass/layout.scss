@@ -1,0 +1,71 @@
+@import 'utils/mixins';
+@import 'utils/variables';
+
+@import 'vendor/ionicons';
+@import 'vendor/react-datepicker';
+@import 'vendor/react-draft-wysiwyg';
+@import 'vendor/react-select';
+@import 'vendor/react-timepicker';
+
+@import 'modules/accordion';
+@import 'modules/dialog';
+@import 'modules/file-upload';
+@import 'modules/filter';
+@import 'modules/form';
+@import 'modules/loader';
+@import 'modules/map';
+@import 'modules/multi-select';
+@import 'modules/radio-checkbox';
+@import 'modules/repeater';
+@import 'modules/richtext';
+@import 'modules/select';
+@import 'modules/slider';
+@import 'modules/tab';
+@import 'modules/table';
+@import 'modules/textinput';
+@import 'modules/timepicker';
+@import 'modules/tooltip';
+
+#root {
+	font-family: 'Helvetica';
+
+	& > div > div:nth-of-type(2) {
+		background-color: red;
+		padding: 60px 40px;
+		border: 1px solid rgb(238, 238, 238);
+		padding: 40px;
+		border-radius: 2px;
+		box-shadow: rgba(0, 0, 0, 0.05) 0px 2px 3px;
+		background-color: rgb(255, 255, 255);
+		margin: 30px 0 -20px;
+	}
+}
+
+*, *:before, *:after {
+	box-sizing: border-box;
+}
+
+.button {
+	line-height: 40px;
+	font-size: 18px;
+	padding: 0 10px;
+	background-color: $brand-color;
+	color: white;
+	border: 0;
+	cursor: pointer;
+}
+
+input, textarea {
+	display: block;
+	width: 100%;
+	min-height: 40px;
+	padding: 8px 10px;
+	font-size: 16px;
+	line-height: 1.4;
+	color: $text-color;
+	border: 1px solid $brand-color;
+}
+
+button:focus {
+	outline: 0;
+}

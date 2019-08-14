@@ -1,0 +1,39 @@
+.icon-add-organisation:before {
+    content: '';
+    background: url(../images/icon-add-organisation.svg) no-repeat;
+    background-size: 100%;
+    background-position: center;
+    height: 22px;
+    width: 24px;
+    display: block;
+}
+
+.icon-add-people:before {
+    content: '';
+    background: url(../images/icon-add-people.svg) no-repeat;
+    background-size: 100%;
+    background-position: center;
+    height: 22px;
+    width: 24px;
+    display: block;
+}
+
+.avatar-female{                        
+    @extend .icon-person-female;
+}
+.avatar-male{                        
+    @extend .icon-person-male;
+}
+.avatar-female, .avatar-male{
+    @extend [class^="icon-"];
+    font-size:31px;
+}
+
+.icon-masks{
+ &.gray{
+     &:before{
+         color: $color-gray;
+     }
+ }
+}
+

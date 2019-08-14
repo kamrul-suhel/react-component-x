@@ -1,0 +1,60 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div
+  className="form-group form-type-checkbox form-unstyled has-multiple-options form-group-valid"
+>
+  <div
+    className="form-field-wrapper"
+  >
+    <div
+      className="form-options"
+    >
+      <div
+        className="form-option form-option-checkbox "
+      >
+        <label
+          className="form-option-inner"
+        >
+          <input
+            checked={false}
+            className="option-input"
+            disabled={false}
+            name="options"
+            onChange={[Function]}
+            type="checkbox"
+            value="foo"
+          />
+          <span
+            className="option-label"
+          >
+            Foo
+          </span>
+        </label>
+      </div>
+      <div
+        className="form-option form-option-checkbox is-selected"
+      >
+        <label
+          className="form-option-inner"
+        >
+          <input
+            checked={true}
+            className="option-input"
+            disabled={false}
+            name="options"
+            onChange={[Function]}
+            type="checkbox"
+            value="bar"
+          />
+          <span
+            className="option-label"
+          >
+            Bar
+          </span>
+        </label>
+      </div>
+    </div>
+  </div>
+</div>
+`;

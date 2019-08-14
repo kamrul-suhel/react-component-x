@@ -1,0 +1,23 @@
+{
+    "presets": [
+        "react",
+        "env",
+        "flow",
+        "stage-2"
+    ],
+    "plugins": [
+        "transform-decorators-legacy"
+    ],
+    "env": {
+        "development": {
+            "presets": [
+                "react-hmre"
+            ]
+        },
+		"production": {
+		    "ignore": [
+		        "**/*.test.js"
+		    ]
+		},
+    },
+}

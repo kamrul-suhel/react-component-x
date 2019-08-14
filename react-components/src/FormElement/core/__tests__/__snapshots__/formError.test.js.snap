@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div
+  className="form-field-error-wrapper"
+>
+  <ul>
+    <li>
+      Something went wrong
+    </li>
+  </ul>
+</div>
+`;

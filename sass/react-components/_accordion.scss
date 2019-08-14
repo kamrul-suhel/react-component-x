@@ -1,0 +1,49 @@
+.accordion-item {
+        width:100%;
+        position:relative;
+        padding:12px 0px;
+	&.is-active {
+		.accordion-header:after {
+			content: "-";
+                        color:black;
+		} 
+
+		.accordion-body {
+			display: block;
+		}
+	}
+
+	.accordion-header {
+		background-color: $brand-color;
+		font-size: 18px;
+		position: relative;
+		cursor: pointer;
+		padding: 10px 20px;
+		color: white;
+		display: flex;
+		align-items: center;
+                font-weight:500;
+
+		&:after {			
+			content: "+";
+			font-size: 35px;
+			position: absolute;
+			right: 0px;
+			top: 50%;
+			transform: translateY(-50%);
+			text-align: center;
+			line-height: 40px;
+			color: black;
+                        font-weight:400;
+		}
+	}
+
+	.accordion-body {
+		display: none;
+		background-color: white;
+		padding: 10px 20px 10px 20px;
+		border: 1px solid $brand-color;
+		margin-top: -1px;
+	}
+}
+
