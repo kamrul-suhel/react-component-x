@@ -41,7 +41,7 @@
         "file-loader": "^2.0.0",
         "flow-bin": "^0.83.0",
         "jest": "^23.6.0",
-        "lodash": "^4.17.11",
+        "lodash": "^4.17.19",
         "moment": "^2.22.2",
         "node-sass": "^4.9.4",
         "react-addons-test-utils": "^15.6.2",
