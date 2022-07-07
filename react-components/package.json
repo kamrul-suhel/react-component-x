@@ -42,7 +42,7 @@
         "flow-bin": "^0.83.0",
         "jest": "^23.6.0",
         "lodash": "^4.17.11",
-        "moment": "^2.22.2",
+        "moment": "^2.29.4",
         "node-sass": "^4.9.4",
         "react-addons-test-utils": "^15.6.2",
         "react-dom": "^16.5.2",
